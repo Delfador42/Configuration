@@ -1,34 +1,3 @@
-
-
-if type brew &>/dev/null; then
-  FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
-
-  autoload -Uz compinit
-  compinit
-fi
-
- # Base16 Shell
- base16_shELL="$HOME/.config/base16-shell/"
- [ -n "$ps1" ] && \
-     [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
-         eval "$("$BASE16_SHELL/profile_helper.sh")"
-
-
-#This is to fix the color problem when vim opens in tmux  
-alias vim="TERM=screen-256color vim"
-
-
-#  ls() {
-#    if [[ $@ == "-la" ]]; then
-#      command ls -la | more
-#    else
-#      command ls "$@"
-#    fi
-#  }
-#
-
-
-
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
@@ -127,5 +96,31 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+#*************Custom Mods****************
+
 export PROMPT='Immortal| %1~ |'
 
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+
+  autoload -Uz compinit
+  compinit
+fi
+
+ # Base16 Shell
+ base16_shELL="$HOME/.config/base16-shell/"
+ [ -n "$ps1" ] && \
+     [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
+         eval "$("$BASE16_SHELL/profile_helper.sh")"
+
+
+#This is to fix the color problem when vim opens in tmux  
+alias vim="TERM=screen-256color vim"
+#alias python="python3"
+#alias python=/usr/bin/python3
+
+alias python="/usr/local/bin/python3"
+alias localhost="python3 -m http.server"
+# Add Visual Studio Code (code)                                                                                    
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin" 
