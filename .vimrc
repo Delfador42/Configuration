@@ -15,15 +15,12 @@ Plug 'dense-analysis/ale'
 Plug 'luochen1990/rainbow'
 Plug 'chriskempson/base16-vim'
 Plug 'https://github.com/zefei/simple-dark.git'
-Plug 'https://github.com/pangloss/vim-javascript.git'
 call plug#end()
 
 
 
 
 
-inoremap kj <esc>
-nmap <C-b> :NERDTreeToggle
 "Emmit Plugin redifine leader key 
 let g:user_emmet_leader_key=','
 let mapleader = " "
@@ -33,6 +30,8 @@ syntax on
 set encoding=utf-8
 set clipboard=unnamed
 set number
+inoremap kj <esc>
+nnoremap <C-b> :NERDTreeToggle
 "Rainbow Parentheses
 let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowToggle
 "Show Commands
@@ -74,4 +73,5 @@ let base16colorspace=256  " Access colors present in 256 colorspace
 "colorscheme base16-default-dark
 "colorscheme darcula
 colorscheme simple-dark
+
 
