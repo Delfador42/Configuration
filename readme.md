@@ -1,4 +1,4 @@
-## Terminal Shix
+## Terminal Shiz
 -Install Oh my zsh
 
 -Install vim
