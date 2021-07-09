@@ -24,6 +24,7 @@ call plug#end()
 "Emmit Plugin redifine leader key 
 let g:user_emmet_leader_key=','
 let mapleader = " "
+map <leader>h :noh<CR>
 "My custimizations
 filetype plugin indent on
 syntax on
@@ -55,7 +56,7 @@ set hlsearch
 set noswapfile
 "Autoclose tags
 inoremap " ""<left>
-inoremap ' ''<left>
+""inoremap ' ''<left>
 inoremap ( ()<left>
 inoremap [ []<left>
 inoremap { {}<left>

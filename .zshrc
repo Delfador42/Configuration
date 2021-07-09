@@ -120,7 +120,8 @@ alias vim="TERM=screen-256color vim"
 #alias python="python3"
 #alias python=/usr/bin/python3
 
-alias python="/usr/local/bin/python3"
+alias py="/usr/local/bin/python3"
 alias localhost="python3 -m http.server"
 # Add Visual Studio Code (code)                                                                                    
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin" 
+export PATH=$HOME/node/bin:$PATH
