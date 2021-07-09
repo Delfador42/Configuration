@@ -2,11 +2,12 @@
 -Install Oh my zsh
 
 -Install vim
+  -install vim-plug
   - Run PlugInstall
 
 -Install tmux
 
-##Application Shiz
+## Application 
 -Install Hyper: https://hyper.is/
   - install plugins
 
@@ -14,7 +15,7 @@
 
 -Install Keyboard Maestro: https://www.keyboardmaestro.com/main/
 
-##Image Converter
+## Image Converter
 Convert png to jpeg
 -https://png2jpg.com/
 -Windows:
