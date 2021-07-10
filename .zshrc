@@ -125,3 +125,6 @@ alias localhost="python3 -m http.server"
 # Add Visual Studio Code (code)                                                                                    
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin" 
 export PATH=$HOME/node/bin:$PATH
+
+#Allow suggestions
+source /usr/local/Cellar/zsh-autosuggestions/0.7.0/share/zsh-autosuggestions/zsh-autosuggestions.zsh 
